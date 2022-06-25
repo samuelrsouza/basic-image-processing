@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Position</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+</head>
+
+<body class="d-flex ">
+    <main class="d-flex flex-nowrap ">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <h1 class="fs-4">Pixel Position</h1>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item m-2">
+                    <button id="btnLoad" type="button" class="btn btn-primary w-100">
+                        Load Image
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnGrayScale" type="button" class="btn btn-outline-secondary w-100">
+                        GrayScale
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnMean" type="button" class="btn btn-outline-secondary w-100">
+                        Mean
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnInvertColours" type="button" class="btn btn-outline-secondary w-100">
+                        Invert Colours
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnBrightness" type="button" class="btn btn-outline-warning w-100">
+                        Brightness Adjust
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnRedFlag" type="button" class="btn btn-outline-danger w-100">
+                        Red Filter
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnGreenFlag" type="button" class="btn btn-outline-success w-100">
+                        Green Filter
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnBlueFlag" type="button" class="btn btn-outline-info w-100">
+                        Blue Filter
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnFlip90R" type="button" class="btn btn-outline-light w-100">
+                        Flip to the Right
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnFlip360" type="button" class="btn btn-outline-light w-100">
+                        Flip Upside Down
+                    </button>
+                </li>
+                <li class="nav-item m-2">
+                    <button id="btnFlip90L" type="button" class="btn btn-outline-light w-100">
+                        Flip Left
+                    </button>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="https://github.com/samuelrsouza" target="_blank"
+                    class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="https://avatars.githubusercontent.com/u/57929064?v=4" alt="" width="32" height="32"
+                        class="rounded-circle me-2">
+                    <strong class="name">Samuel Souza</strong>
+                </a>
+            </div>
+        </div>
+    </main>
+    <div id="" class="image-processed d-flex align-items-center flex-column">
+        <div id="" class="text-center text-dark">
+            <h2 id="" class="">Original</h2>
+            <img id="image" src="Images/clown-fish.jpg" class="img img-fluid" alt="peixe">
+        </div>
+        <div id="" class="text-center text-dark">
+            <h2 id="" class="">Processed</h2>
+            <canvas id="image-canvas" class="image-canvas img-fluid"></canvas>
+        </div>
+        <div class="container">
+            <footer class="py-1 my-1">
+                <ul class="nav justify-content-center border-bottom border-dark pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="text-dark nav-link px-2">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-center text-dark">&copy; 2022</p>
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
